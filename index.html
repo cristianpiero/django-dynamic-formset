@@ -34,6 +34,37 @@
           <h1>
 <a name="django-dynamic-formset" class="anchor" href="#django-dynamic-formset"><span class="octicon octicon-link"></span></a>django-dynamic-formset</h1>
 
+<p>`
+{{form.management_form}}
+{% for formset in form %}</p>
+
+<div>
+  <div>
+    <div>
+      <div>
+        {{ formset.category.errors }}
+        {{formset.category}}
+      </div>
+      <div>
+        {{formset.DELETE}} 
+        <a href="#"></a>
+      </div>      
+    </div> 
+    <div>          
+      <div>
+        {{ formset.description.errors }}
+        {{formset.description}}
+      </div>
+    </div>    
+  </div>    
+</div>
+
+<p>{%endfor%}</p>
+
+<div></div>
+
+<p>`</p>
+
 <p>Para colocar o botão adicionar insira o codigo abaixo insira a classe "ADD-{{form.prefix}}" em uma div:</p>
 
 <p><code>&lt;div class="col-md-12 text-center ADD-{{form.prefix}}"&gt;&lt;/div&gt;</code></p>
